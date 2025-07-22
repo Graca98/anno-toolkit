@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "dev": "npm run fill-db && next dev",
+    "dev": "npm run fill-db && next dev --turbopack",
     "build": "npm run fill-db && next build",
     "start": "next start",
     "xml-to-json": "NODE_OPTIONS=--max_old_space_size=4096 ts-node --transpile-only --script-mode ./src/data/xml-to-json.ts",
@@ -26,7 +26,7 @@
     "@mui/material": "^6.3.1",
     "@mui/material-nextjs": "^6.3.1",
     "fast-xml-parser": "^4.5.1",
-    "next": "15.1.6",
+    "next": "^15.4.3",
     "next-translate": "^2.6.2",
     "react": "19.0.0",
     "react-dom": "19.0.0"
